@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: mypod
+    labels:
+       env: dev
+       dc: IN
+spec:
+  containers:
+      - name: mycon
+        image: httpd
